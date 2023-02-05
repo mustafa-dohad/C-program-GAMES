@@ -80,7 +80,7 @@ void printBoard()
     printf(" %c | %c | %c ", board[2][0], board[2][1], board[2][2]);
     printf("\n");
 }
-// this will find whether the game is finished or not//
+// this will find whether the game is finished or not //
 int checkFreeSpaces()
 {
     int freeSpaces = 9;
