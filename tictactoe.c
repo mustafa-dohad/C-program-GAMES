@@ -1,12 +1,12 @@
-#include<stdio.h>  // ye sab cheez mein dalta hai //
-#include<stdlib.h> // neeche ke saare header files ki i took help from internet to run my game
-#include<ctype.h>  //                                                                         //
-#include<time.h>   //                                                                        //
-// thore se general variables declare kar raha hoon jo ke constant rahenge //
+#include<stdio.h>  
+#include<stdlib.h> 
+#include<ctype.h>  
+#include<time.h>   
+// declaration of general variables //
 char board[3][3];
 const char PLAYER = 'X';
 const char COMPUTER = 'O';
-// yahan pe we'll call out all the functions taake mere liye asaani ho diff function pe diff kaam karne ki//
+
 void resetBoard();
 void printBoard();
 int checkFreeSpaces();
@@ -70,7 +70,7 @@ void resetBoard()
         }
     }
 }
-// thats are board map//
+// this is our board map //
 void printBoard()
 {
     printf(" %c | %c | %c ", board[0][0], board[0][1], board[0][2]);
@@ -97,7 +97,7 @@ int checkFreeSpaces()
     }
     return freeSpaces;
 }
-// this is the player's moving code//
+// this is the player's moving code //
 void playerMove()
 {
     int x;
@@ -123,7 +123,7 @@ void playerMove()
         }
     } while (board[x][y] != ' ');
 }
-// random computer move//
+// random computer move //
 void computerMove()
 {
     int x;
@@ -144,10 +144,10 @@ void computerMove()
         printWinner(' ');
     }
 }
-// for winner checking//
+// for winner checking //
 char checkWinner()
 {
-    // yeh check karega rows ko //
+    // checking rows //
     for (int i = 0; i < 3; i++)
     {
         if (board[i][0] == board[i][1] && board[i][0] == board[i][2])
@@ -155,7 +155,7 @@ char checkWinner()
             return board[i][0];
         }
     }
-    // similar to that ye check karega columns ko//
+    // checking columns //
     for (int i = 0; i < 3; i++)
     {
         if (board[0][i] == board[1][i] && board[0][i] == board[2][i])
@@ -175,7 +175,7 @@ char checkWinner()
 
     return ' ';
 }
-// agar 3 rows || 3 columns || 3 'X' on diagnols are present or if there is no empty spaces left//
+// if 3 rows || 3 columns || 3 'X' on diagnols are present or if there is no empty spaces left //
 void printWinner(char winner)
 {
     if (winner == PLAYER)
@@ -193,5 +193,3 @@ void printWinner(char winner)
 }
 // short and simple magar very affective and efficient code :] //
 // also formatted the document so that the code looks clean, organized and easy to understand without excess line of code ✌🏼 //
-// i have taken some help from the internet for a few questions i had for example the computer's move and randomizing is header files also before this project my understanding on functions was weak so that too got some help//
-// but not anymore i think i have learned so much from making this project //
