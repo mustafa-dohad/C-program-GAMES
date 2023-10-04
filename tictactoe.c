@@ -192,4 +192,4 @@ void printWinner(char winner)
     }
 }
 // short and simple magar very affective and efficient code :] //
-// also formatted the document so that the code looks clean, organized and easy to understand without excess line of code ✌🏼 //
+
