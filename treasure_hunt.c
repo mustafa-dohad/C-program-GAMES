@@ -18,7 +18,7 @@ int main(void)
     printf("         Treasure Hunt!         \n");
     printf("================================\n\n");
 
-    // Player configuration
+    // Player configuration //
     printf("PLAYER Configuration\n");
     printf("--------------------\n");
     printf("Enter a single character to represent the player: ");
