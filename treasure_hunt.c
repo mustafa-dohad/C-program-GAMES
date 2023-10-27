@@ -38,7 +38,7 @@ int main(void)
             printf("     Must be between 1 and 10!\n");
     }
 
-    // Game configuration
+    // Game configuration //
     printf("GAME configuration\n");
     printf("------------------\n");
 
